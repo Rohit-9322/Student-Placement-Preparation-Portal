@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Student Placement Preparation Portal</title>
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom stylesheet connection -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i> PrepPortal
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" aria-label="Toggle Navigation Menu" id="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="aptitude.html">Aptitude</a></li>
+                    <li><a href="dsa.html">DSA</a></li>
+                    <li><a href="companies.html">Companies</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Action Buttons: Theme Toggle -->
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" title="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Have query about syllabus, roadmap, or company exam patterns? Reach out to our guidance mentors.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content Grid -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Info Column -->
+                <div class="contact-info-panel">
+                    <h2>Contact Information</h2>
+                    <p class="panel-subtitle">Feel free to contact us through email, phone call, or visit our local Tech Park center.</p>
+                    
+                    <div class="info-details">
+                        <div class="info-detail-item">
+                            <div class="item-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h3>Phone Support</h3>
+                                <p>+91 98765 43210</p>
+                                <p>Mon - Sat (9:00 AM - 6:00 PM)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-detail-item">
+                            <div class="item-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h3>Email Queries</h3>
+                                <p>support@prepportal.com</p>
+                                <p>mentor@prepportal.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-detail-item">
+                            <div class="item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h3>Our Location</h3>
+                                <p>Tech Park Sector 62, Noida, Uttar Pradesh, India - 201301</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Networks -->
+                    <div class="panel-socials">
+                        <h3>Connect Digitally</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="contact-form-panel">
+                    <h2>Send Us a Message</h2>
+                    <p class="panel-subtitle">Complete the fields below and our placement counseling team will reply within 24 hours.</p>
+                    
+                    <!-- Success banner (hidden initially) -->
+                    <div id="success-banner" class="success-banner" style="display: none;">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <h3>Message Submitted Successfully!</h3>
+                            <p>Thank you for reaching out. We have logged your request and a placement counselor will respond shortly.</p>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" novalidate>
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="user-name">Full Name <span class="required-star">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-user input-icon"></i>
+                                <input type="text" id="user-name" placeholder="Enter your full name" required>
+                            </div>
+                            <span class="error-msg" id="name-error"></span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="user-email">Email Address <span class="required-star">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-envelope input-icon"></i>
+                                <input type="email" id="user-email" placeholder="name@college.edu" required>
+                            </div>
+                            <span class="error-msg" id="email-error"></span>
+                        </div>
+
+                        <!-- Phone Number Field -->
+                        <div class="form-group">
+                            <label for="user-phone">Phone Number <span class="required-star">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-phone input-icon"></i>
+                                <input type="tel" id="user-phone" placeholder="10-digit mobile number" required>
+                            </div>
+                            <span class="error-msg" id="phone-error"></span>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <label for="user-message">Your Message <span class="required-star">*</span></label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fa-solid fa-message input-icon"></i>
+                                <textarea id="user-message" rows="5" placeholder="Type your query here (min 10 characters)..." required></textarea>
+                            </div>
+                            <span class="error-msg" id="message-error"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Info Column -->
+                <div class="footer-col info-col">
+                    <a href="index.html" class="footer-logo"><i class="fa-solid fa-graduation-cap"></i> PrepPortal</a>
+                    <p>A comprehensive study environment designed to support university graduates transitioning into competitive IT career fields.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <!-- Links Column -->
+                <div class="footer-col links-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="aptitude.html">Aptitude Prep</a></li>
+                        <li><a href="dsa.html">DSA Roadmap</a></li>
+                        <li><a href="companies.html">Company Info</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Topics Column -->
+                <div class="footer-col topics-col">
+                    <h3>Important Prep</h3>
+                    <ul>
+                        <li><a href="aptitude.html">Number System</a></li>
+                        <li><a href="aptitude.html">Logical Reasoning</a></li>
+                        <li><a href="dsa.html">Linked Lists &amp; Trees</a></li>
+                        <li><a href="dsa.html">Sorting &amp; Searching</a></li>
+                        <li><a href="companies.html">TCS &amp; Infosys Pattern</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Column -->
+                <div class="footer-col contact-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fa-solid fa-envelope"></i> support@prepportal.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Tech Park Sector 62, Noida, India</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Student Placement Preparation Portal. All Rights Reserved. Built with <i class="fa-solid fa-heart" style="color: #4f46e5;"></i> for Graduates.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-btn" title="Go to top" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Global Javascript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>

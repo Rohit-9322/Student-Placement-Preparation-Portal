@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Student Placement Preparation Portal</title>
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom stylesheet connection -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i> PrepPortal
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" aria-label="Toggle Navigation Menu" id="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="aptitude.html">Aptitude</a></li>
+                    <li><a href="dsa.html">DSA</a></li>
+                    <li><a href="companies.html">Companies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Action Buttons: Theme Toggle -->
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" title="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Your Career, Accelerated</span>
+                <h1>Bridge the Gap Between Campus &amp; Career</h1>
+                <p>Master DSA, ace quantitative aptitude rounds, explore detailed company exam patterns, and land your dream job with our comprehensive placement preparation portal.</p>
+                <div class="hero-buttons">
+                    <a href="aptitude.html" class="btn btn-primary">Start Prep <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- SVG Vector Illustration for a premium, lightweight load -->
+                <svg viewBox="0 0 500 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#818cf8;stop-opacity:0.2" />
+                            <stop offset="100%" style="stop-color:#2dd4bf;stop-opacity:0.1" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Background Grid Shape -->
+                    <rect x="20" y="20" width="460" height="360" rx="20" fill="url(#grad2)" />
+                    <!-- Circle Ornaments -->
+                    <circle cx="100" cy="100" r="40" fill="#4f46e5" opacity="0.15" />
+                    <circle cx="400" cy="300" r="60" fill="#0d9488" opacity="0.1" />
+                    <!-- Visual Dashboard Card 1 -->
+                    <rect x="80" y="120" width="160" height="110" rx="10" fill="var(--card-bg, #ffffff)" filter="drop-shadow(0px 10px 20px rgba(0,0,0,0.05))" />
+                    <rect x="100" y="140" width="50" height="8" rx="4" fill="#4f46e5" />
+                    <rect x="100" y="160" width="100" height="6" rx="3" fill="#94a3b8" />
+                    <rect x="100" y="175" width="80" height="6" rx="3" fill="#cbd5e1" />
+                    <circle cx="115" cy="205" r="8" fill="#0d9488" />
+                    <circle cx="135" cy="205" r="8" fill="#4f46e5" />
+                    <circle cx="155" cy="205" r="8" fill="#e2e8f0" />
+                    <!-- Visual Dashboard Card 2 (DSA Progress) -->
+                    <rect x="260" y="80" width="160" height="140" rx="10" fill="var(--card-bg, #ffffff)" filter="drop-shadow(0px 15px 25px rgba(0,0,0,0.08))" />
+                    <rect x="280" y="100" width="80" height="8" rx="4" fill="#0d9488" />
+                    <!-- Coding block mockup -->
+                    <rect x="280" y="125" width="120" height="5" rx="2" fill="#e2e8f0" />
+                    <rect x="280" y="138" width="90" height="5" rx="2" fill="#cbd5e1" />
+                    <rect x="295" y="151" width="85" height="5" rx="2" fill="#818cf8" />
+                    <rect x="295" y="164" width="60" height="5" rx="2" fill="#2dd4bf" />
+                    <rect x="280" y="177" width="40" height="5" rx="2" fill="#e2e8f0" />
+                    <rect x="280" y="195" width="60" height="12" rx="6" fill="#4f46e5" opacity="0.1" />
+                    <!-- Student Cap Mascot Outline overlay -->
+                    <path d="M250 240 L350 290 L250 340 L150 290 Z" fill="url(#grad1)" />
+                    <path d="M250 290 L250 350" stroke="#0d9488" stroke-width="4" stroke-linecap="round" />
+                    <path d="M320 300 C320 330, 280 360, 250 360 C220 360, 180 330, 180 300" stroke="#4f46e5" stroke-width="3" fill="none" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placement Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <!-- Stat Card 1 -->
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="stat-info">
+                        <h3 class="counter" data-target="15000">0</h3>
+                        <p>Students Placed</p>
+                    </div>
+                </div>
+                <!-- Stat Card 2 -->
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-building"></i></div>
+                    <div class="stat-info">
+                        <h3 class="counter" data-target="120">0</h3>
+                        <p>Recruiting Partners</p>
+                    </div>
+                </div>
+                <!-- Stat Card 3 -->
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-percent"></i></div>
+                    <div class="stat-info">
+                        <h3 class="counter" data-target="95">0</h3>
+                        <p>Placement Success Rate</p>
+                    </div>
+                </div>
+                <!-- Stat Card 4 -->
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <div class="stat-info">
+                        <h3 class="counter" data-target="42">0</h3>
+                        <p>Highest Package (LPA)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Introduction & Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">What We Offer</span>
+                <h2>Comprehensive Toolkit to Master Your Placements</h2>
+                <p>We provide curated learning resources, practice problem sets, and specific details about top recruiters to streamline your recruitment preparation roadmap.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-calculator"></i></div>
+                    <h3>Aptitude Preparation</h3>
+                    <p>Develop fast problem-solving strategies for arithmetic, algebra, logical reasoning, and verbal analysis required for initial screening exams.</p>
+                    <a href="aptitude.html" class="feature-link">Explore Topics <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>DSA Preparation</h3>
+                    <p>Master algorithms, trees, graphs, sorting, and recursion. Dive deep into standard computer science coding concepts with clear levels.</p>
+                    <a href="dsa.html" class="feature-link">Explore DSA <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-city"></i></div>
+                    <h3>Company Information</h3>
+                    <p>Access structured templates describing eligibility, interview rounds, exam patterns, packages, and cracking tips for top IT service giants.</p>
+                    <a href="companies.html" class="feature-link">View Companies <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Mock Interviews &amp; Tips</h3>
+                    <p>Get structured tips, HR round suggestions, resume building strategies, and contact expert guidance to boost your confidence.</p>
+                    <a href="contact.html" class="feature-link">Contact Mentor <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose This Portal Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-image">
+                    <svg viewBox="0 0 500 420" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="whyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:0.8" />
+                                <stop offset="100%" style="stop-color:#0d9488;stop-opacity:0.8" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Grid layout representation -->
+                        <rect x="50" y="50" width="400" height="320" rx="15" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" />
+                        <!-- Dark theme version overlay elements for illustration -->
+                        <rect x="80" y="80" width="340" height="60" rx="8" fill="#ffffff" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))" />
+                        <circle cx="110" cy="110" r="15" fill="#4f46e5" />
+                        <rect x="140" y="100" width="220" height="8" rx="4" fill="#1e293b" />
+                        <rect x="140" y="115" width="140" height="6" rx="3" fill="#64748b" />
+
+                        <rect x="80" y="160" width="340" height="60" rx="8" fill="#ffffff" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))" />
+                        <circle cx="110" cy="190" r="15" fill="#0d9488" />
+                        <rect x="140" y="180" width="200" height="8" rx="4" fill="#1e293b" />
+                        <rect x="140" y="195" width="100" height="6" rx="3" fill="#64748b" />
+
+                        <rect x="80" y="240" width="340" height="60" rx="8" fill="#ffffff" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))" />
+                        <circle cx="110" cy="270" r="15" fill="#818cf8" />
+                        <rect x="140" y="260" width="250" height="8" rx="4" fill="#1e293b" />
+                        <rect x="140" y="275" width="170" height="6" rx="3" fill="#64748b" />
+                    </svg>
+                </div>
+                <div class="why-content">
+                    <span class="sub-title">Why Choose Us</span>
+                    <h2>Structured Placement Prep Crafted Specially For Students</h2>
+                    <p>Unlike disorganized resources scattered across the internet, PrepPortal provides a streamlined learning track to help you progress step-by-step.</p>
+                    
+                    <ul class="why-list">
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <strong>Curated Topic Collections</strong>
+                                <p>We cover essential quantitative aptitude formulas and crucial DSA patterns directly tested in company rounds.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <strong>Comprehensive Company Patterns</strong>
+                                <p>Structured blueprints detailing the exam structure, package scales, eligibility standards, and HR test-taking tips.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <strong>Fully Dark-Mode Ready</strong>
+                                <p>Seamless visual adjustment designed for night owls preparing late hours for coding interviews.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">Testimonials</span>
+                <h2>Success Stories from Our Alumni</h2>
+                <p>Read how final-year students utilized this preparation portal to crack screening tests and interviews at major MNCs.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">"The DSA roadmap and company patterns page were lifesavers. I followed the step-by-step sorting and recursion exercises, which directly matched the screening questions at TCS!"</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                        <div class="user-info">
+                            <h4>Rohan Sharma</h4>
+                            <p>Placed at TCS Ninja (3.6 LPA)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">"Aptitude test preparation was my biggest fear. The formulas drawer and reveal-answer toggles under Profit &amp; Loss and Percentage helped me crack the Accenture written test."</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                        <div class="user-info">
+                            <h4>Ananya Goel</h4>
+                            <p>Placed at Accenture (4.5 LPA)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">"Having clean, structured patterns for Cognizant and Wipro under a single dashboard kept me organized. Highly recommend this to junior batches starting their journey."</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                        <div class="user-info">
+                            <h4>Kunal Sen</h4>
+                            <p>Placed at Cognizant Genc (4.0 LPA)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Ready to Land Your Dream Offer?</h2>
+                <p>Join thousands of fellow students. Master placement aptitude and data structures using our organized topic indices today.</p>
+                <div class="cta-buttons">
+                    <a href="dsa.html" class="btn btn-primary">Start Coding Prep</a>
+                    <a href="contact.html" class="btn btn-outline">Connect with Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Info Column -->
+                <div class="footer-col info-col">
+                    <a href="index.html" class="footer-logo"><i class="fa-solid fa-graduation-cap"></i> PrepPortal</a>
+                    <p>A comprehensive study environment designed to support university graduates transitioning into competitive IT career fields.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <!-- Links Column -->
+                <div class="footer-col links-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="aptitude.html">Aptitude Prep</a></li>
+                        <li><a href="dsa.html">DSA Roadmap</a></li>
+                        <li><a href="companies.html">Company Info</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Topics Column -->
+                <div class="footer-col topics-col">
+                    <h3>Important Prep</h3>
+                    <ul>
+                        <li><a href="aptitude.html">Number System</a></li>
+                        <li><a href="aptitude.html">Logical Reasoning</a></li>
+                        <li><a href="dsa.html">Linked Lists &amp; Trees</a></li>
+                        <li><a href="dsa.html">Sorting &amp; Searching</a></li>
+                        <li><a href="companies.html">TCS &amp; Infosys Pattern</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Column -->
+                <div class="footer-col contact-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fa-solid fa-envelope"></i> support@prepportal.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Tech Park Sector 62, Noida, India</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Student Placement Preparation Portal. All Rights Reserved. Built with <i class="fa-solid fa-heart" style="color: #4f46e5;"></i> for Graduates.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-btn" title="Go to top" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Global Javascript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>

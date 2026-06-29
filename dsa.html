@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Preparation | Student Placement Preparation Portal</title>
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom stylesheet connection -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i> PrepPortal
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" aria-label="Toggle Navigation Menu" id="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="aptitude.html">Aptitude</a></li>
+                    <li><a href="dsa.html" class="active">DSA</a></li>
+                    <li><a href="companies.html">Companies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Action Buttons: Theme Toggle -->
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" title="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Data Structures &amp; Algorithms</h1>
+            <p>Develop logical coding capabilities, analyze complexity bounds, and master coding interview questions.</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="dsa-search" placeholder="Search DSA topics (e.g. Arrays, Linked List, Recursion...)" aria-label="Search DSA Topics">
+                <button class="btn btn-primary" id="search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DSA Topics Grid -->
+    <section class="topics-grid-section">
+        <div class="container">
+            <div class="topics-grid" id="dsa-grid">
+
+                <!-- Topic 1: Arrays -->
+                <div class="topic-card" data-topic="arrays">
+                    <div class="topic-header">
+                        <h2>Arrays</h2>
+                        <span class="badge badge-easy">Easy</span>
+                    </div>
+                    <p class="topic-description">Contiguous blocks of memory. Master traversal, insertion, deletion, sub-arrays, rotation, and two-pointer techniques.</p>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-road"></i> Learning Roadmap</button>
+                        <div class="accordion-content">
+                            <ol class="roadmap-list">
+                                <li>Basic operations, index lookup, and linear searches.</li>
+                                <li>Subarray analysis (Kadane's algorithm for maximum sum subarray).</li>
+                                <li>Two-pointer and sliding window methods.</li>
+                                <li>Matrix calculations (2D Arrays traversal and rotation).</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-code"></i> Practice Problems</button>
+                        <div class="accordion-content">
+                            <div class="question-box">
+                                <p class="question-text"><strong>P1. Two Sum:</strong> Given an array of integers, find two numbers such that they add up to a specific target.</p>
+                                <button class="btn-reveal">View Solution Guide</button>
+                                <div class="reveal-content">
+                                    <p class="answer-text"><strong>Approach:</strong> Use a Hash Map to store elements and their indices. For each element <code>x</code>, check if <code>target - x</code> exists in the map. Time complexity is O(N).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 2: Strings -->
+                <div class="topic-card" data-topic="strings">
+                    <div class="topic-header">
+                        <h2>Strings</h2>
+                        <span class="badge badge-easy">Easy</span>
+                    </div>
+                    <p class="topic-description">Sequences of characters. Learn reverse algorithms, anagram verification, palindrome checks, substring counts, and pattern matching.</p>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-road"></i> Learning Roadmap</button>
+                        <div class="accordion-content">
+                            <ol class="roadmap-list">
+                                <li>Immutability concepts and basic character manipulations.</li>
+                                <li>Anagram verification &amp; palindrome checks.</li>
+                                <li>Substrings, sliding window matches, and hash counts.</li>
+                                <li>Knuth-Morris-Pratt (KMP) pattern searching algorithm.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-code"></i> Practice Problems</button>
+                        <div class="accordion-content">
+                            <div class="question-box">
+                                <p class="question-text"><strong>P1. Valid Anagram:</strong> Determine if string S and T are anagrams of each other.</p>
+                                <button class="btn-reveal">View Solution Guide</button>
+                                <div class="reveal-content">
+                                    <p class="answer-text"><strong>Approach:</strong> Use a character frequency counter array of size 26. Increment counts for string S and decrement counts for string T. Check if all values are zero. O(N) time and O(1) auxiliary space.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 3: Linked List -->
+                <div class="topic-card" data-topic="linked list">
+                    <div class="topic-header">
+                        <h2>Linked List</h2>
+                        <span class="badge badge-medium">Medium</span>
+                    </div>
+                    <p class="topic-description">Linear collections of nodes containing pointers. Study singly, doubly, and circular linked lists, loops detection, and node reversals.</p>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-road"></i> Learning Roadmap</button>
+                        <div class="accordion-content">
+                            <ol class="roadmap-list">
+                                <li>Node structure creation, insertion, and traversal.</li>
+                                <li>Reversing a linked list (Iterative and Recursive).</li>
+                                <li>Floyd's Cycle-Finding Algorithm (Fast and Slow pointer).</li>
+                                <li>Merging and sorting linked lists (Merge Sort).</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-code"></i> Practice Problems</button>
+                        <div class="accordion-content">
+                            <div class="question-box">
+                                <p class="question-text"><strong>P1. Detect Loop in Linked List:</strong> Check if a linked list contains a cycle.</p>
+                                <button class="btn-reveal">View Solution Guide</button>
+                                <div class="reveal-content">
+                                    <p class="answer-text"><strong>Approach:</strong> Use two pointers: <code>slow</code> moving 1 step and <code>fast</code> moving 2 steps. If they meet at any node, a cycle exists. If fast reaches NULL, no cycle exists.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 4: Stack -->
+                <div class="topic-card" data-topic="stack">
+                    <div class="topic-header">
+                        <h2>Stack</h2>
+                        <span class="badge badge-medium">Medium</span>
+                    </div>
+                    <p class="topic-description">LIFO (Last In First Out) structures. Learn array/list implementations, parenthesis matching, expression evaluations, and monotonic stack concepts.</p>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-road"></i> Learning Roadmap</button>
+                        <div class="accordion-content">
+                            <ol class="roadmap-list">
+                                <li>Standard operations: push(), pop(), peek(), isEmpty().</li>
+                                <li>Balanced parenthetical checks.</li>
+                                <li>Infix, prefix, and postfix conversions and evaluations.</li>
+                                <li>Monotonic stack to solve next greater element problems.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-code"></i> Practice Problems</button>
+                        <div class="accordion-content">
+                            <div class="question-box">
+                                <p class="question-text"><strong>P1. Balanced Parentheses:</strong> Check if brackets <code>()</code>, <code>{}</code>, and <code>[]</code> in string S are balanced.</p>
+                                <button class="btn-reveal">View Solution Guide</button>
+                                <div class="reveal-content">
+                                    <p class="answer-text"><strong>Approach:</strong> Push opening brackets onto a stack. When a closing bracket arrives, verify it matches the top of the stack and pop. If mismatched or stack ends empty/non-empty incorrectly, return false.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 5: Queue -->
+                <div class="topic-card" data-topic="queue">
+                    <div class="topic-header">
+                        <h2>Queue</h2>
+                        <span class="badge badge-medium">Medium</span>
+                    </div>
+                    <p class="topic-description">FIFO (First In First Out) structures. Practice circular queues, double-ended queues (Deques), sliding window maximums, and buffer queues.</p>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-road"></i> Learning Roadmap</button>
+                        <div class="accordion-content">
+                            <ol class="roadmap-list">
+                                <li>Enqueue, dequeue operations using arrays and linked lists.</li>
+                                <li>Circular Queue representation to save memory.</li>
+                                <li>Priority Queue implementation using Heaps.</li>
+                                <li>Sliding Window Maximum utilizing a Monotonic Deque.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-code"></i> Practice Problems</button>
+                        <div class="accordion-content">
+                            <div class="question-box">
+                                <p class="question-text"><strong>P1. Implement Stack using Queues:</strong> Construct stack LIFO behavior using queue FIFO methods.</p>
+                                <button class="btn-reveal">View Solution Guide</button>
+                                <div class="reveal-content">
+                                    <p class="answer-text"><strong>Approach:</strong> Use two queues. On pushing an element, enqueue to Queue2, then enqueue all elements from Queue1 to Queue2. Swap the names of Queue1 and Queue2. Push becomes O(N), Pop is O(1).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 6: Tree -->
+                <div class="topic-card" data-topic="tree">
+                    <div class="topic-header">
+                        <h2>Tree</h2>
+                        <span class="badge badge-hard">Hard</span>
+                    </div>
+                    <p class="topic-description">Non-linear hierarchical nodes. Master Binary Trees, Binary Search Trees (BST), traversals (Pre, In, Post, Level order), heights, and balancing.</p>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-road"></i> Learning Roadmap</button>
+                        <div class="accordion-content">
+                            <ol class="roadmap-list">
+                                <li>Binary tree properties and DFS Traversals (Inorder, Preorder, Postorder).</li>
+                                <li>BFS Traversal (Level-order) using queues.</li>
+                                <li>BST insertions, deletions, search validation.</li>
+                                <li>Advanced structures: AVL Trees, Segment Trees, and Tries.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-code"></i> Practice Problems</button>
+                        <div class="accordion-content">
+                            <div class="question-box">
+                                <p class="question-text"><strong>P1. Find Height of Binary Tree:</strong> Find the length of the longest path from root to leaf node.</p>
+                                <button class="btn-reveal">View Solution Guide</button>
+                                <div class="reveal-content">
+                                    <p class="answer-text"><strong>Approach:</strong> Use a post-order traversal recursively. Height of tree = <code>1 + max(Height(left_subtree), Height(right_subtree))</code>. Base case returns 0 for NULL.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 7: Graph -->
+                <div class="topic-card" data-topic="graph">
+                    <div class="topic-header">
+                        <h2>Graph</h2>
+                        <span class="badge badge-hard">Hard</span>
+                    </div>
+                    <p class="topic-description">Nodes (vertices) and edges. Understand Adjacency lists, DFS, BFS, cycle checks, Dijkstra's algorithm, and topological sorting.</p>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-road"></i> Learning Roadmap</button>
+                        <div class="accordion-content">
+                            <ol class="roadmap-list">
+                                <li>Representations (Adjacency Matrix, Adjacency List).</li>
+                                <li>Standard Graph Traversals: Depth First Search and Breadth First Search.</li>
+                                <li>Shortest Path finding (Dijkstra's, Bellman-Ford).</li>
+                                <li>Minimum Spanning Trees (Kruskal's, Prim's algorithms).</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-code"></i> Practice Problems</button>
+                        <div class="accordion-content">
+                            <div class="question-box">
+                                <p class="question-text"><strong>P1. Detect Cycle in Undirected Graph:</strong> Check if a path can cycle back to an already visited vertex.</p>
+                                <button class="btn-reveal">View Solution Guide</button>
+                                <div class="reveal-content">
+                                    <p class="answer-text"><strong>Approach:</strong> During DFS, pass the 'parent' node. If a neighbor is already visited and is not the parent of the current node, a cycle exists.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 8: Recursion -->
+                <div class="topic-card" data-topic="recursion">
+                    <div class="topic-header">
+                        <h2>Recursion</h2>
+                        <span class="badge badge-medium">Medium</span>
+                    </div>
+                    <p class="topic-description">Functions calling themselves. Study call stack mechanisms, base cases, fibonacci series, Tower of Hanoi, and backtracking principles.</p>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-road"></i> Learning Roadmap</button>
+                        <div class="accordion-content">
+                            <ol class="roadmap-list">
+                                <li>Stack frames, parameter passing, and base case formulation.</li>
+                                <li>Linear vs Tree recursion models.</li>
+                                <li>Divide-and-Conquer paradigms.</li>
+                                <li>Backtracking applications (N-Queens, Subset Generation).</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-code"></i> Practice Problems</button>
+                        <div class="accordion-content">
+                            <div class="question-box">
+                                <p class="question-text"><strong>P1. Fibonacci Sequence:</strong> Compute the N-th Fibonacci number.</p>
+                                <button class="btn-reveal">View Solution Guide</button>
+                                <div class="reveal-content">
+                                    <p class="answer-text"><strong>Approach:</strong> Base case: if N <= 1, return N. Otherwise, return <code>fib(N-1) + fib(N-2)</code>. Optimize to O(N) using dynamic programming / memoization.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 9: Sorting -->
+                <div class="topic-card" data-topic="sorting">
+                    <div class="topic-header">
+                        <h2>Sorting</h2>
+                        <span class="badge badge-easy">Easy</span>
+                    </div>
+                    <p class="topic-description">Arranging elements in order. Analyze Bubble, Selection, Insertion, Merge, Quick, Heap, and Radix sort complexities.</p>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-road"></i> Learning Roadmap</button>
+                        <div class="accordion-content">
+                            <ol class="roadmap-list">
+                                <li>O(N²) elementary algorithms: Bubble, Selection, Insertion Sort.</li>
+                                <li>O(N log N) recursive sorting: Merge Sort and Quick Sort.</li>
+                                <li>Space-Time complexity trade-offs and Stability analysis.</li>
+                                <li>Non-comparison based sorting (Counting Sort, Radix Sort).</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-code"></i> Practice Problems</button>
+                        <div class="accordion-content">
+                            <div class="question-box">
+                                <p class="question-text"><strong>P1. Merge Sort Implementation:</strong> Sort an array recursively using merge partitions.</p>
+                                <button class="btn-reveal">View Solution Guide</button>
+                                <div class="reveal-content">
+                                    <p class="answer-text"><strong>Approach:</strong> Divide the array into two halves, recursively sort both halves, and then merge the sorted halves back together in O(N log N) time and O(N) auxiliary space.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 10: Searching -->
+                <div class="topic-card" data-topic="searching">
+                    <div class="topic-header">
+                        <h2>Searching</h2>
+                        <span class="badge badge-easy">Easy</span>
+                    </div>
+                    <p class="topic-description">Finding target elements. Compare Linear Search and Binary Search on sorted spaces, and search space reduction.</p>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-road"></i> Learning Roadmap</button>
+                        <div class="accordion-content">
+                            <ol class="roadmap-list">
+                                <li>Unsorted arrays search: Linear Search in O(N).</li>
+                                <li>Sorted arrays search: Binary Search in O(log N).</li>
+                                <li>Binary search implementation details (avoiding index overflows).</li>
+                                <li>Binary search on answer space (e.g., Book Allocation Problem).</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><i class="fa-solid fa-code"></i> Practice Problems</button>
+                        <div class="accordion-content">
+                            <div class="question-box">
+                                <p class="question-text"><strong>P1. Binary Search:</strong> Find index of target K in a sorted array.</p>
+                                <button class="btn-reveal">View Solution Guide</button>
+                                <div class="reveal-content">
+                                    <p class="answer-text"><strong>Approach:</strong> Initialize <code>low = 0</code>, <code>high = N-1</code>. While low <= high, calculate <code>mid = low + (high - low)/2</code>. If array[mid] == target, return mid. Adjust boundaries accordingly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Info Column -->
+                <div class="footer-col info-col">
+                    <a href="index.html" class="footer-logo"><i class="fa-solid fa-graduation-cap"></i> PrepPortal</a>
+                    <p>A comprehensive study environment designed to support university graduates transitioning into competitive IT career fields.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <!-- Links Column -->
+                <div class="footer-col links-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="aptitude.html">Aptitude Prep</a></li>
+                        <li><a href="dsa.html">DSA Roadmap</a></li>
+                        <li><a href="companies.html">Company Info</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Topics Column -->
+                <div class="footer-col topics-col">
+                    <h3>Important Prep</h3>
+                    <ul>
+                        <li><a href="aptitude.html">Number System</a></li>
+                        <li><a href="aptitude.html">Logical Reasoning</a></li>
+                        <li><a href="dsa.html">Linked Lists &amp; Trees</a></li>
+                        <li><a href="dsa.html">Sorting &amp; Searching</a></li>
+                        <li><a href="companies.html">TCS &amp; Infosys Pattern</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Column -->
+                <div class="footer-col contact-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fa-solid fa-envelope"></i> support@prepportal.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Tech Park Sector 62, Noida, India</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Student Placement Preparation Portal. All Rights Reserved. Built with <i class="fa-solid fa-heart" style="color: #4f46e5;"></i> for Graduates.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-btn" title="Go to top" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Global Javascript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
